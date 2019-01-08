@@ -45,7 +45,11 @@ end
 
   
   def col_names_for_insert
-    self.class.column_names.collect {|col| col == "id"}.join(", ")
+    column_names = []
+    self.class.column_names.each do |col| 
+      if col == "id"
+        column_names << col
+      end
   end
 
 def values_for_insert
