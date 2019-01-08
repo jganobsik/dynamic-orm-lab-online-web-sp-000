@@ -26,6 +26,7 @@ def persisted?
   !!self.id 
 end
 
-
+def insert 
+  
 
 end
