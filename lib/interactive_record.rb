@@ -50,6 +50,7 @@ end
       if col == "id"
         column_names << col
       end
+      end
   end
 
 def values_for_insert
