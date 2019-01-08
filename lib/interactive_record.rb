@@ -26,4 +26,6 @@ def persisted?
   !!self.id 
 end
 
+
+
 end
