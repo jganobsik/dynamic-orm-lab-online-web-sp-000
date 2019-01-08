@@ -29,7 +29,7 @@ end
 def insert 
   sql = <<-SQL
   
-  
+  INSERT INTO #{
   
   
   SQL
