@@ -50,8 +50,8 @@ end
         column_names << col
       end
       column_names.delete("id")
-      column_names.join(",")
-      column_names
+     joined_names = column_names.join(", ")
+      joined_names_names
   end
 
 def values_for_insert
