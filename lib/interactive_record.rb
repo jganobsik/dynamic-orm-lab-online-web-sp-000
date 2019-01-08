@@ -60,4 +60,7 @@ def insert
     
     self.id = DB[:conn].execute("SELECT last_insert_row_id();").flatten.first
   end
+  
+  
+  def self.find_by(value)
 end
