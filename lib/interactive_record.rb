@@ -91,16 +91,18 @@ def insert
   
   def self.find_by(key_value_pair)
   value = key_value_pair.values.first
-  value_int? = 
+  value_int = nil  
   
   if value.class == Integer 
-    value else
-    "'#{value}'"
+   
+   value_int = value 
+    else
+    value_int ="'#{value}'"
   end
   key = key_value_pair.keys.first
   
     sql = <<-SQL
-    SELECT * FROM #{self.table_name} WHERE #{key} = #{value_int?}
+    SELECT * FROM #{self.table_name} WHERE #{key} = #{value_int}
     SQL
     DB[:conn].execute(sql)
   end
