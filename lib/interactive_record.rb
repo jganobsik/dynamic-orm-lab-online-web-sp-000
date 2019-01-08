@@ -14,4 +14,10 @@ class InteractiveRecord
   def self.attribute_names_for_insert
     ATTRIBUTES.keys[1.. - 1].collect
   end
+  
+  def self.attribute_values
+end
+
+self.save 
+
 end
