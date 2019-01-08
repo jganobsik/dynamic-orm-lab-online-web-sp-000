@@ -70,4 +70,5 @@ def insert
     SELECT * FROM #{self.table_name} WHERE #{key} = #{value}
     SQL
     DB[:conn].execute(sql)
+  end
 end
