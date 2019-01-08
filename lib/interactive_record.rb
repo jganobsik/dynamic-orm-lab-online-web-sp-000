@@ -43,6 +43,11 @@ end
   end
 
 
+  
+  def col_names_select
+    self.class.column_names.delete_if {|col| col == "id"}.join(", ")
+  end
+
 def values_select
     values = []
     
