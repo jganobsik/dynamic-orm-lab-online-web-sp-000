@@ -33,6 +33,6 @@ def insert
   
   
   SQL
-    DB[:conn].execute(sql, )
+    DB[:conn].execute(sql, *attribute_values)
   end
 end
