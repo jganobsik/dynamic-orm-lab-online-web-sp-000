@@ -35,6 +35,6 @@ def insert
   SQL
     DB[:conn].execute(sql, *attribute_values)
     
-    self.id = DB[:conn].execute("SELECT last_insert_row_id();")
+    self.id = DB[:conn].execute("SELECT last_insert_row_id();").flatten.first
   end
 end
