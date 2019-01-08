@@ -91,7 +91,7 @@ def insert
   
   def self.find_by(key_value_pair)
   value = key_value_pair.values.first
-  value_int? = value.class == Fixnum ? value : "'#{value}'"
+  value_int? = value.class == Integer ? value : "'#{value}'"
   key = key_value_pair.keys.first
   
     sql = <<-SQL
