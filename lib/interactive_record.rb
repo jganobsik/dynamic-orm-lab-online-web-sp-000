@@ -56,16 +56,11 @@ end
 
 def values_for_insert
     values = []
-    
     self.class.column_names.each do |col_name|
-      values << "'#{send(col_name)}'" 
+      values << "'#{send(col_name)}'" unless send(col_name).nil?
     end
-    
-    values.delete_at[0]
-    values.join(",")
-    values
+    values.join(", ")
   end
-
 
  def save
     sql = <<-SQL
