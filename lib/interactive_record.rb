@@ -62,8 +62,8 @@ def insert
   end
   
   
-  def self.find_by(value)
-  
+  def self.find_by(Key_value_pair)
+  key  = 
   
     sql = <<-SQL
     SELECT * FROM #{self.table_name} WHERE #{key} = #{value}
