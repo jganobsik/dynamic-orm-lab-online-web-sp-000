@@ -18,9 +18,7 @@ class InteractiveRecord
   def self.attribute_values
 end
   
-  def save 
-  persisted? ? update : insert
-  end
+ 
   
    def self.column_names
 
