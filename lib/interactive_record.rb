@@ -27,6 +27,11 @@ def persisted?
 end
 
 def insert 
+  sql = <<-SQL
   
+  
+  
+  
+  SQL
 
 end
