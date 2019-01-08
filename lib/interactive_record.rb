@@ -50,6 +50,7 @@ end
         column_names << col
       end
       column_names.delete("id")
+      column_names.join(",")
       column_names
   end
 
