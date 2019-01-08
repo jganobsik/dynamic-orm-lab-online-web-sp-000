@@ -7,4 +7,5 @@ class Student < InteractiveRecord
   attr_accessor :name, :grade
   
   def initialize(attributes)
+  end
 end
