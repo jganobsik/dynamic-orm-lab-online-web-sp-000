@@ -34,6 +34,13 @@ end
     column_names.compact
   end
   
+  
+    def initialize(param_names={})
+    param_names.each do |property, value|
+      self.send("#{property}=", value)
+    end
+  end
+
 def persisted?
   !!self.id 
 end
