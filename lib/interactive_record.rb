@@ -62,7 +62,7 @@ def values_for_insert
       values << "'#{send(col_name)}'" 
     end
     end
-    values.join(", ")
+    values.join(",")
   end
 
 
