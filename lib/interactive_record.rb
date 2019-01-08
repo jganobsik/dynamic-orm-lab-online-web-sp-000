@@ -10,4 +10,6 @@ class InteractiveRecord
   def self.column_names
     
   end
+  
+  def self.attribute_names_for_collect
 end
