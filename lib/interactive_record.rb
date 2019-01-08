@@ -11,5 +11,6 @@ class InteractiveRecord
     
   end
   
-  def self.attribute_names_for_collect
+  def self.attribute_names_for_insert
+  end
 end
