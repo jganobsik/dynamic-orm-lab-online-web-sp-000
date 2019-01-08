@@ -94,7 +94,7 @@ def insert
   key = key_value_pair.keys.first
   
     sql = <<-SQL
-    SELECT * FROM #{self.table_name} WHERE #{value} = #{key}
+    SELECT * FROM #{self.table_name} WHERE #{key} = #{value}
     SQL
     DB[:conn].execute(sql)
   end
