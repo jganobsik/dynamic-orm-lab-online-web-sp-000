@@ -12,6 +12,6 @@ class InteractiveRecord
   end
   
   def self.attribute_names_for_insert
-    ATTRIBUTES.keys.{
+    (ATTRIBUTES.keys.size - 1){
   end
 end
