@@ -63,4 +63,8 @@ def insert
   
   
   def self.find_by(value)
+    sql = <<-SQL
+    
+    SELECT * FROM #{self.
+    SQL
 end
