@@ -41,9 +41,6 @@ end
     end
   end
 
-def persisted?
-  !!self.id 
-end
 
 def insert 
   sql = <<-SQL
