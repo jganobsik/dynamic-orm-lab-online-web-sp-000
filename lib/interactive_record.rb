@@ -51,7 +51,7 @@ end
       end
       column_names.delete("id")
      joined_names = column_names.join(", ")
-      joined_names_names
+      joined_names
   end
 
 def values_for_insert
