@@ -33,5 +33,6 @@ def insert
   
   
   SQL
-db[:conn]
+    DB[:conn].execute(sql, )
+  end
 end
