@@ -33,5 +33,5 @@ def insert
   
   
   SQL
-
+db
 end
