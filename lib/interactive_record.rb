@@ -47,7 +47,7 @@ end
   def col_names_for_insert
     column_names = []
     self.class.column_names.each do |col| 
-      if col == "id"
+      if col != "id"
         column_names << col
       end
       end
