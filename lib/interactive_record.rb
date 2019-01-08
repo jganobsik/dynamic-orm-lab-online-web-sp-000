@@ -29,7 +29,7 @@ end
 def insert 
   sql = <<-SQL
   
-  INSERT INTO #{self.class.table_name}
+  INSERT INTO #{self.class.table_name}(title)
   
   
   SQL
