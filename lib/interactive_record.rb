@@ -47,10 +47,9 @@ end
   def col_names_for_insert
     column_names = []
     self.class.column_names.each do |col| 
-      if col != "id"
         column_names << col
       end
-      end
+      column_names.delete("id")
   end
 
 def values_for_insert
